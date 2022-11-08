@@ -14,7 +14,7 @@ public class Calculator {
     public Carpet getCarpet() {
         return carpet;
     }
-    public double totalArea(){
+    public double getTotalCost(){
         return this.floor.getArea()*this.carpet.getCost();
     }
 }

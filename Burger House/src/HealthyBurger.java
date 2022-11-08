@@ -24,17 +24,17 @@ public class HealthyBurger extends Hamburger {
 
         System.out.println("Basic " + this.getName() + "on a" + this.getBreadRollType() + "bread roll type with" + this.getMeat() + ",price is" + this.getPrice());
 
-        System.out.println("Added" + this.getName() + "for an extra" + this.getAddition1Price());
+        System.out.println("Added" + this.getAddition1Name() + "for an extra" + this.getAddition1Price());
         System.out.println("Added " + this.getAddition2Name() + " for an extra " + this.getAddition2Price());
         System.out.println("Added " + this.getAddition3Name() + " for an extra " + this.getAddition3Price());
         System.out.println("Added " + this.getAddition4Name() + " for an extra " + this.getAddition4Price());
 
         System.out.println("Added " + this.HealthyExtra1Name + " for an extra " + this.HealthyExtra1Price);
-        System.out.println("Added " + this.HealthyExtra1Name + " for an extra " + this.HealthyExtra1Price);
+        System.out.println("Added " + this.HealthyExtra2Name + " for an extra " + this.HealthyExtra2Price);
 
         double basePrice = super.itemizeburger();
-        double totolPrice = basePrice + this.HealthyExtra1Price + HealthyExtra2Price;
+        double totalPrice = basePrice + this.HealthyExtra1Price + HealthyExtra2Price;
 
-        return totolPrice;
+        return totalPrice;
     }
 }

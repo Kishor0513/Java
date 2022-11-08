@@ -14,7 +14,7 @@ public class Swimming_Pool_Volume_Calculator {
 
         Rectangle rectangleobj=new Rectangle(width,length);
 
-        System.out.println("Ractangle.width "+ rectangleobj.getWidth());
+        System.out.println("Rctangle.width "+ rectangleobj.getWidth());
         System.out.println("Rectangle.height "+ rectangleobj.getLength());
         System.out.println("Rectangle.area "+ rectangleobj.getArea());
 

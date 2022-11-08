@@ -15,6 +15,6 @@ public class Capet_Cost_Calculator {
 
         Calculator calculator=new Calculator(floor1,carpet1);
 
-        System.out.println("");
+        System.out.println(calculator.getTotalCost());
     }
 }
