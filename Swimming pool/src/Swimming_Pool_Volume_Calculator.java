@@ -26,7 +26,6 @@ public class Swimming_Pool_Volume_Calculator {
         double heightforCuboid=sc.nextDouble();
 
         Cuboid cuboidobj=new Cuboid(width,length,heightforCuboid);
-
         System.out.println("Cuboid.width "+cuboidobj.getWidth());
         System.out.println("Cuboid.length "+cuboidobj.getLength());
         System.out.println("Cuboid.area "+cuboidobj.getArea());
