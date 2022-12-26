@@ -9,9 +9,10 @@ public class CreditCard {
         this.limit=0.0;
     }
 
-    public CreditCard(String name, double balance) {
+    public CreditCard(String name, double balance,double limit) {
         this.name = name;
         this.balance = balance;
+        this.limit=limit;
     }
 
     public String getName() {
@@ -35,7 +36,7 @@ public class CreditCard {
             balance-= amount;
         }
         else {
-            System.out.println("Invalid Amount");
+            System.out.println("Invalid amount");
         }
     }
     public String toString(){
