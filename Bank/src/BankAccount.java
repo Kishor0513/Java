@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class BankAccount {
     private double accountNumber;
     private double balance;
@@ -5,27 +7,39 @@ public class BankAccount {
     private String email;
     private int contactNumber;
 
-    private double deposit;
-    public BankAccount(double accountNumber, double balance, String customerName, String email, int contactNumber) {
-        this.accountNumber = accountNumber;
-        this.balance = balance;
-        this.customerName = customerName;
-        this.email = email;
-        this.contactNumber = contactNumber;
+   private  boolean isEnrolledForMobileBanking;
+   private  boolean isDebitCardAssigned;
 
+   public BankAccount(){
+       this.accountNumber=0.0;
+       this.balance=0.0;
+       this.customerName="";
+       this.email="";
+       this.contactNumber=0;
+       this.isEnrolledForMobileBanking=false;
+       this.isDebitCardAssigned=false;
+   }
+
+    public BankAccount(String customerName){
+       this.customerName=customerName;
     }
-    
 
-    public void setBalance(Float balance) {
-        this.balance = balance;
+    public BankAccount(String customerName,double balance){
+       this.customerName=customerName;
+       this.balance=balance;
     }
 
     public void setCustomerName(String customerName) {
         this.customerName = customerName;
     }
 
-    public void setAccountNumber(Float accountNumber) {
-        this.accountNumber = accountNumber;
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public void  setAccountNumber(){
+        Random random=new Random();
+        this.accountNumber=random.nextInt(999999999);
     }
 
     public double getAccountNumber() {
@@ -39,10 +53,39 @@ public class BankAccount {
     public String getCustomerName() {
         return customerName;
     }
-    public  void  deposit(double deposit){
-        this.deposit=deposit;
+
+    public void deposit(double amount){
+       if(amount>0){
+           this.balance += amount;
+           System.out.println("Account Info: "+
+                   "customerName = "+customerName+
+                   ", account Number = "+accountNumber+
+                   ", deposit = "+amount+
+                   ", balance = "+balance);
+        }
+        else{
+            System.out.println("Invalid Amount");
+        }
     }
-    public void Deposit(double accountNumber, double balance, String customerName){
-        double total=balance+this.deposit;
+
+    public void withdraw(double amount){
+       if (amount>0 && amount<=this.balance){
+           this.balance -=amount;
+           System.out.println("Account Info: "+
+                   "customerName = "+customerName+
+                   ", account Number = "+accountNumber+
+                   ", withdraw = "+amount+
+                   ", balance = "+balance);
+       }
+       else{
+            System.out.println("Invalid Amount");
+        }
+    }
+
+    public String toString(){
+       return "Account Info: "+
+               "customerName = "+customerName+
+               ", account Number = "+accountNumber+
+               ", balance = "+balance;
     }
 }
