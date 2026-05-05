@@ -48,6 +48,21 @@ nbdist/
 .vscode/
 *.code-workspace
 
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Build tools
+.gradle/
+.m2/
+target/
+
+# IDE cache
+.qodo/
+*.swp
+*.swo
+*~
+
 # Maven
 target/
 pom.xml.tag

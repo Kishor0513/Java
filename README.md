@@ -6,9 +6,10 @@ A comprehensive collection of Java programming exercises and projects completed 
 
 - [About](#about)
 - [Projects Overview](#projects-overview)
+- [Directory Structure](#directory-structure)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
+- [Learning Path](#learning-path)
 - [Learning Outcomes](#learning-outcomes)
 - [Contributing](#contributing)
 
@@ -18,49 +19,29 @@ This repository contains Java programs developed during a structured 30-day chal
 
 ## 📚 Projects Overview
 
-### Basic Programs
+All projects are organized into logical categories within the `projects/` directory:
 
-- **Average** - Calculate average of numbers
-- **Sum** - Addition operations
-- **Subtraction** - Subtraction operations
-- **Swap** - Swapping values between variables
-- **Positive or Negative** - Number validation
-- **AM Array** - Array manipulation exercises
-- **Sort** - Sorting algorithms implementation
+### 🔧 **Basics** (`projects/basics/`)
 
-### Mathematical Calculators
+Fundamental Java programming concepts (10 projects)
 
-- **AM GM** - Arithmetic Mean and Geometric Mean calculator
-- **Simple Interest** - Simple interest calculator
-- **Mean** - Statistical mean calculation
-- **Cylinder Area Volume** - Calculate cylinder properties
-- **Cube** - Cube calculations
-- **Rectangle** - Rectangle area and perimeter
-- **Square** - Square calculations
+### 📐 **Mathematics** (`projects/mathematics/`)
 
-### Object-Oriented Programming Projects
+Mathematical calculations and geometry (9 projects)
 
-- **Bank** - Banking system with account management and transactions
-- **Credit** - Credit card management application
-- **College** - College student management system
-- **LibraryManagement** - Advanced library management system with user accounts
-- **Library** - Library book borrowing and payment system with GUI
+### 🏛️ **OOP** (`projects/oop/`)
 
-### Design Projects
+Object-Oriented Programming projects (5 projects)
 
-- **Burger House** - Restaurant order system with Hamburger, Healthy Burger, and Deluxe Burger classes
-- **Carpet Calculator** - Floor and carpet cost calculator
-- **Swimming Pool** - Pool volume calculator using geometry
+### 🎨 **GUI** (`projects/gui/`)
 
-### Advanced Concepts
+Graphical User Interface applications (2 projects)
 
-- **Interface** - Interface implementation examples
-- **InterfaceAnimal** - Single interface inheritance demonstration
-- **InterfaceAnimalMultiple** - Multiple interface implementation
-- **Check Answer** - Meeting and answer checking system
-- **Days of Week** - Day enumeration and handling
-- **Pattern1** - Pattern printing algorithms
-- **Temperature** - Temperature conversion utilities
+### 🏗️ **Design Patterns** (`projects/design-patterns/`)
+
+Interface and design pattern implementations (3 projects)
+
+**→ See [DIRECTORY_STRUCTURE.md](DIRECTORY_STRUCTURE.md) for the complete project breakdown and descriptions.**
 
 ## 🛠️ Technologies Used
 
@@ -87,36 +68,52 @@ git clone https://github.com/Kishor0513/Java.git
 cd Java
 ```
 
-2. Open any project in IntelliJ IDEA:
-
-   - Navigate to the specific project folder
-   - Open the `.iml` file or import as a project
-   - Build and run the `Main.java` file
-
-3. Compile and run via command line:
+2. Navigate to a project category:
 
 ```bash
-cd "Project Name"
+cd projects/basics      # or mathematics, oop, gui, design-patterns
+```
+
+3. Open in IntelliJ IDEA:
+   - Open the project folder directly in IntelliJ
+   - The `.iml` file will be auto-detected
+   - Build and run the `Main.java` file
+
+4. Compile and run via command line:
+
+```bash
+cd "projects/basics/Average"
 javac src/*.java
 java -cp src Main
 ```
 
-## 📁 Project Structure
+## 📖 Learning Path
 
-Each project follows a standard IntelliJ IDEA structure:
+**Recommended progression:**
+
+1. Start with `projects/basics/` - Learn fundamentals
+2. Move to `projects/mathematics/` - Apply logic to calculations
+3. Explore `projects/oop/` - Master object-oriented concepts
+4. Study `projects/design-patterns/` - Learn design patterns
+5. Examine `projects/gui/` - Build interactive applications
+
+## 📁 Directory Structure
 
 ```
-Project Name/
-├── Project Name.iml        # IntelliJ IDEA module file
-└── src/                    # Source code directory
-    ├── Main.java          # Entry point
-    └── [Other classes]    # Supporting classes
+java-30day-challenge/
+├── projects/
+│   ├── basics/              # 10 fundamental programs
+│   ├── mathematics/         # 9 calculation programs
+│   ├── oop/                 # 5 OOP projects
+│   ├── gui/                 # 2 GUI applications
+│   ├── design-patterns/     # 3 interface examples
+│   └── advanced/            # Reserved for future projects
+├── README.md                # Main documentation
+├── DIRECTORY_STRUCTURE.md   # Complete project breakdown
+└── .gitignore               # Git ignore rules
 ```
 
-### Special Projects with GUI
-
-- **Library**: Features `LoginPage.form`, `MainWindow.form`, `PaymentWindow.form`
-- **LibraryManagement**: Includes `LibraryManagementSystem.form`
+→ **For complete project descriptions, see [DIRECTORY_STRUCTURE.md](DIRECTORY_STRUCTURE.md)**
 
 ## 📖 Learning Outcomes
 
